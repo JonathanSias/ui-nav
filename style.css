@@ -1,0 +1,127 @@
+/*************************************************
+**************************************************
+
+Author: Jonathan Sias
+GitHub: JonathanSias
+IG: jonathansias
+Copyright 2023. All Rights Reserved.
+
+/************************************************
+*************************************************
+0. CSS Reset ------------------------ 
+1. Universal Styles -----------------
+2. Header & Nav Styles -------------- 
+3. Main Body Styles ----------------- 
+4. Sidebar Styles ------------------- 
+5. Widget Styles --------------------
+6. Footer Styles -------------------- 
+7. Comments & Form Styles ----------- 
+8. Generic Styles ------------------- 
+*************************************************
+************************************************/
+
+:root {
+    --bg-light: #f1f3f5;
+    --bg-dark: #121214;
+    --card-light: #fff;
+    --card-dark: #202024;
+    --gradient: linear-gradient(45deg, hsla(197, 100%, 63%, 1) 0%, hsla(258, 100%, 71%, 1) 50%, hsla(294, 100%, 55%, 1) 100%);
+    --purple: #e39cfb;
+    --green: #c0e7ac;
+    --teal: #73e1c2;
+}
+
+:root .light-mode {
+    --bg-color: var(--bg-light);
+    --card-color: var(--card-light);
+}
+
+:root .dark-mode {
+    --bg-color: var(--bg-dark);
+    --card-color: var(--card-dark);
+}
+/*----------------------------------------------
+------------------------------------------------
+0. CSS Reset
+------------------------------------------------
+----------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+/*----------------------------------------------
+------------------------------------------------
+1. Universal Styles
+------------------------------------------------
+----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color) !important;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-color);
+    border: none;
+    border-radius: 15px;
+}
+/*----------------------------------------------
+------------------------------------------------
+2. Header & Nav Styles
+------------------------------------------------
+----------------------------------------------*/
+.menu {
+    background-color: var(--card-color);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0;
+    background: var(--gradient);
+    border-radius: 18px;
+    border: none;
+    margin: 5px 10px;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 15px;
+    font-size: 32px;
+}
+
+.nav-item:hover {}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-link.active {}
+
+.nav-link.active {
+    background: none !important;
+}
