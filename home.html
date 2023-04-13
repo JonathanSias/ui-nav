@@ -13,23 +13,66 @@
     </head>
     <body class="light-mode">
         <div class="container">
-            <div class="content card"></div>
+            <div class="tab-content content" id="myTabContent">
+                <div class="tab-pane fade show active grid" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="card d-4 border-more flex-column">
+                        <img class="big-img" src="img/smart-home-bro.png" alt="home">
+                        <div class="info">
+                            <h4 class="">Home</h4>
+                            <p class="">See all devices available</p>
+                        </div>
+                    </div>
+                    <div class="card d-4 flex-column">
+                        <img class="big-img" src="img/switches-bro.png" alt="home">
+                        <div class="info">
+                            <h4 class="">Lights</h4>
+                            <p class="">Turn On/Off the lights</p>
+                        </div>
+                    </div>
+                    <div class="card d-4 flex-column">
+                        <img class="big-img" src="img/voice-control-amico.png" alt="home">
+                        <div class="info">
+                            <h4 class="">Assistant</h4>
+                            <p class="">Call me if you need me</p>
+                        </div>
+                    </div>
+                    <div class="card d-4 flex-column">
+                        <img class="big-img" src="img/headphone-amico.png" alt="home">
+                        <div class="info">
+                            <h4 class="">Music</h4>
+                            <p class="">Listen to your playlists</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="" role="tabpanel" aria-labelledby="">
+                    <div class="card">
+                        <img class="big-img" src="img/headphone-amico.png" alt="home">
+                        <div class="info">
+                            <h4 class="">Music</h4>
+                            <p class="">Listen to your playlists</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="" role="tabpanel" aria-labelledby=""></div>
+                <div class="tab-pane fade" id="" role="tabpanel" aria-labelledby=""></div>
+                <div class="tab-pane fade" id="" role="tabpanel" aria-labelledby=""></div>
+            </div>
             <!-- Menu -->
             <ul class="menu nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link icon material-symbols-rounded" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Home">home</a>
+                <li class="nav-item active">
+                    <button id="home-tab" data-bs-target="#home" type="button" role="tab" aria-controls="" aria-selected="" class="nav-link icon material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Home">home</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link icon material-symbols-rounded" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Cards">style</a>
+                    <button id="" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="" class="nav-link icon material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Cards">style</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link icon material-symbols-rounded" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Galeria">gallery_thumbnail</a>
+                    <button id="" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="" class="nav-link icon material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Galeria">gallery_thumbnail</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link icon material-symbols-rounded toggle-theme" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Dark Mode">routine</a>
+                    <button id="" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="" class="nav-link icon material-symbols-rounded toggle-theme" data-bs-toggle="tooltip" data-bs-placement="top" title="Dark Mode">routine</button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link icon material-symbols-rounded" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Sair">logout</a>
+                    <button id="" data-bs-target="#" type="button" role="tab" aria-controls="" aria-selected="" class="nav-link icon material-symbols-rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Sair">logout</button>
                 </li>
             </ul>
         </div>

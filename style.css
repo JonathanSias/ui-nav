@@ -10,13 +10,8 @@ Copyright 2023. All Rights Reserved.
 *************************************************
 0. CSS Reset ------------------------ 
 1. Universal Styles -----------------
-2. Header & Nav Styles -------------- 
-3. Main Body Styles ----------------- 
-4. Sidebar Styles ------------------- 
-5. Widget Styles --------------------
-6. Footer Styles -------------------- 
-7. Comments & Form Styles ----------- 
-8. Generic Styles ------------------- 
+2. Nav Styles ----------------------- 
+3. Card -----------------------------
 *************************************************
 ************************************************/
 
@@ -76,16 +71,27 @@ body {
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
+    width: min-content;
+    margin-top: 30px;
 }
 
-.card {
-    background-color: var(--card-color);
-    border: none;
-    border-radius: 15px;
+.grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 /*----------------------------------------------
 ------------------------------------------------
-2. Header & Nav Styles
+2. Nav Styles
 ------------------------------------------------
 ----------------------------------------------*/
 .menu {
@@ -98,6 +104,13 @@ body {
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 .nav-item {
@@ -120,8 +133,46 @@ body {
     color: #fff;
 }
 
-.nav-link.active {}
-
 .nav-link.active {
     background: none !important;
+}
+/*----------------------------------------------
+------------------------------------------------
+3. Card
+------------------------------------------------
+----------------------------------------------*/
+.card {
+    background-color: var(--card-color);
+    border: none;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.border-more {
+    border-radius: 100px 25px 25px 25px;
+}
+
+.d-4 {
+    min-width: 250px;
+}
+
+.info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.card-content {}
+
+img.big-img {
+    width: 100%;
 }
